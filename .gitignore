@@ -1,0 +1,16 @@
+.DS_Store
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+_out
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+
+.vscode
+.idea
