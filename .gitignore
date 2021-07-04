@@ -5,7 +5,7 @@
 *.exe~
 *.dll
 *.so
-*.dylib
+*.dylibgit remote add origin https://github.com/jesus-mata/test.git
 _out
 
 # Output of the go coverage tool, specifically when used with LiteIDE

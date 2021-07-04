@@ -1,0 +1,28 @@
+[project]
+id = "<string>" # machine readable
+name = "<string>" # human readable
+version = "<string>"
+authors = [ "Jesus Mata" ]
+
+[[build.env]]
+name = 'CGO_ENABLED'
+value = "0"
+
+[[build.env]]
+name = 'GOOS'
+value = "linux"
+
+[[build.env]]
+name = 'GOARCH'
+value = "amd64"
+
+[[build.env]]
+name = 'BP_GO_BUILD_FLAGS'
+value = "-buildmode=default -a -mod=readonly -tags=paketo,production"
+
+[[build.env]]
+name = 'BP_GO_BUILD_LDFLAGS'
+value = '-w -s  -X "main.version=0.0.1"'
+
+[metadata]
+# additional arbitrary keys allowed
